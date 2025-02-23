@@ -18,3 +18,9 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_riverpod: ^2.3.6
+  fl_chart: ^0.64.0
+  http: ^0.13.4
