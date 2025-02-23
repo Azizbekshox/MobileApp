@@ -18,3 +18,4 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+flutter build apk --release
