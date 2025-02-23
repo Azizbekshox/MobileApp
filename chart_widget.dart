@@ -1,9 +1,7 @@
-import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
+import 'package:fl_chart/fl_chart.dart';
 
-class ChartWidget extends StatelessWidget {
-  const ChartWidget({super.key});
-
+class TradingChart extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -16,15 +14,17 @@ class ChartWidget extends StatelessWidget {
           lineBarsData: [
             LineChartBarData(
               spots: [
-                const FlSpot(0, 1),
-                const FlSpot(1, 3),
-                const FlSpot(2, 2),
-                const FlSpot(3, 2.5),
-                const FlSpot(4, 3),
+                FlSpot(0, 1),
+                FlSpot(1, 3),
+                FlSpot(2, 2),
+                FlSpot(3, 4),
+                FlSpot(4, 3),
+                FlSpot(5, 5),
               ],
               isCurved: true,
               colors: [Colors.green],
               barWidth: 3,
+              isStrokeCapRound: true,
             ),
           ],
         ),
