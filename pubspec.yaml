@@ -1,20 +1,20 @@
-name: trading_app
-description: AI yordamida trading tahlil qiluvchi mobil ilova
+import 'package:flutter/material.dart';
+import 'package:trading_app/screens/home_screen.dart';
 
-publish_to: 'none' 
-version: 1.0.0+1
+void main() {
+  runApp(const MyApp());
+}
 
-environment:
-  sdk: '>=3.0.0 <4.0.0'
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
 
-dependencies:
-  flutter:
-    sdk: flutter
-  http: ^0.13.5
-
-dev_dependencies:
-  flutter_test:
-    sdk: flutter
-
-flutter:
-  uses-material-design: true
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      title: 'Trading App',
+      theme: ThemeData.dark(),
+      home: const HomeScreen(),
+    );
+  }
+}
